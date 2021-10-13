@@ -1,0 +1,61 @@
+<div class="formContainer">
+    <div class="form">
+        <center>
+            <fieldset>
+                <legend>Ders Şablonu Ekle</legend>
+                <div class="fieldsetContainer">
+                    <div class="formum">
+                        <label for="ders-kodu">Course Code:</label>
+                        <input type="text" id="ders-kodu" name="ders-kodu" style="width: 100px;">
+                    </div>
+                    <div class="formum">
+                        <label for="ders-section">Section:</label>
+                        <input type="number" id="ders-section" name="ders-section" style="width: 60px;" min="0">
+                    </div>
+                    <div class="formum">
+                        <label for="ders-sablonu-secimi">Category:</label>
+                        <select id="ders-sablonu-secimi" name="ders-sablonu-secimi">
+                            <option value="1">MUST</option>
+                            <option value="4">RESTRICTED ELECTIVE</option>
+                            <option value="5">FREE ELECTIVE</option>
+                            <option value="7">TECHNICAL ELECTIVE</option>
+                            <option value="8">NONTECHNICAL ELECTIVE</option>
+                            <option value="9">NOT INCLUDED</option>
+                        </select>
+                    </div>
+                    <div class="formum">
+                        <label for="ders-adi">Ders Adı (isteğe bağlı):</label>
+                        <input type="number" id="ders-adi" name="ders-adi" style="width: 60px;" min="0">
+                    </div>
+                    <div class="formum">
+                        <button type="button" id="sablon-ekleme-butonu">Ekle</button>
+                    </div>
+                    
+                    
+                </div>
+            </fieldset>
+        </center>
+    </div>
+</div>
+<br>
+<div class="formContainer">
+    <div class="form">
+        <center>
+            <fieldset>
+                <legend>Ders Şablonları</legend>
+                <table style="width: 100%;" border="1" id="dersler">
+                    <tbody>
+                        <tr>
+                            <th>Ders Adı</th>
+                            <th>Kod</th>
+                            <th>Section</th>
+                            <th>Kategori</th>
+                            <th>Ekleme</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </center>
+    </div>
+</div>
+<br>

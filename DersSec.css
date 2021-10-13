@@ -1,0 +1,10 @@
+.formum {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+}
+
+.formum > label {
+    font-weight: bold;
+}

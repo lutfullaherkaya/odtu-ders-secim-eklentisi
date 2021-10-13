@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Odtü Teknik Üniversitesi Ders Seçme Yardımcısı",
+  "description": "Ders seçimindeki formları önceden doldurma imkanı sağlar.",
+  "version": "1.0",
+  "homepage_url": "https://lutfullaherkaya.com",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "web_accessible_resources": ["DersSec.html"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://register.metu.edu.tr/*"],
+      "js": ["DersSec.js"],
+      "css": ["DersSec.css"]
+    }
+  ]
+
+}
